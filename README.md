@@ -32,4 +32,16 @@ Usage
 Getting Started
 ------------------
 
+* First, include this script
+ `require_once "AzureMemcache.php";`
+
+* For accessing a live storage service (table storage) 
+ `$account = "Azure Storage Account Name";  
+  $accessKey = "Azure Storage Access Key"; 
+  $tableName = "Azure Storage Table Name";`  
+
+* Create Pear::Memcache compatible object  
+ `$memcache = new AzureMemcache($account, $accessKey, $tableName, "http");`  
+
+* Just Call Pear::Memcache methods.
 
