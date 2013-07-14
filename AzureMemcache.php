@@ -105,16 +105,10 @@ class AzureMemcache
   }
 
   /**
-   * destructor
-   */
-  function __destruct() {
-  }
-
-  /**
    * keep compatibility with Memcache
    *
-   * @param string $host host name
-   * @param string $port port number
+   * @param string $host "host name"
+   * @param string $port "port number"
    * @return bool
    */
   public function addServer($host, $port)
@@ -279,4 +273,13 @@ class AzureMemcache
   {
     return true;
   }
+
+  /**
+   * destructor
+   *
+   * @return void
+   */
+  function __destruct() {
+  }
+
 }
