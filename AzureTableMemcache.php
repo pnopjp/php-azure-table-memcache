@@ -39,7 +39,7 @@ use WindowsAzure\Table\Models\EdmType;
  * @version   Release: @package_version@
  * @link      http://www.pnop.co.jp/
  */
-class AzureMemcache
+class AzureTableMemcache
 {
   /**
    * @var object : Table Service object
